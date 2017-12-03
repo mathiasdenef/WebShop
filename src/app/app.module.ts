@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { RouterModule, Routes } from '@angular/router';
 import { ProductModule } from './product/product.module';
+import {HttpClientModule} from '@angular/common/http';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,10 +30,12 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: false } // <-- debugging purposes only
     ),
+    HttpClientModule,
     // Feature modules
     ShopModule,
     HomeModule,
-    ProductModule
+    ProductModule,
+    
   ],
   declarations: [
     AppComponent,

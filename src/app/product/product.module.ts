@@ -1,3 +1,4 @@
+import { ProductService } from './services/product.service';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ProductComponent } from './product.component';
@@ -9,6 +10,6 @@ import { ProductComponent } from './product.component';
   declarations: [
     ProductComponent
   ],
-  providers: []
+  providers: [ProductService]
 })
 export class ProductModule { }

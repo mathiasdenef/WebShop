@@ -1,3 +1,5 @@
-<p>
-  shop works!
-</p>
+<h1>News items</h1>
+<div *ngFor="let newsItem of newsItems">
+  <a href="#"><h3 style="border-bottom: 1px solid rgb(212, 211, 211); display: inline-block">{{newsItem.title}}</h3></a>
+  <p>{{newsItem.body}}</p>
+</div>

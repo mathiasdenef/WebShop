@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
+import { NewsItemService } from './services/news-item.service';
 
 @NgModule({
   imports: [
@@ -9,6 +10,6 @@ import { HomeComponent } from './home.component';
   declarations: [
     HomeComponent
   ],
-  providers: []
+  providers: [NewsItemService]
 })
 export class HomeModule { }
